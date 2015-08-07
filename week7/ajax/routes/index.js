@@ -13,7 +13,7 @@ router.post('/tasks', function(req, res){
     console.log(req.body)
     var newTask = new db.Task(req.body)
     newTask.save(function(){
-        res.send('got it!') 
+        res.send('got it!')
     })
 })
 router.get('/tasks', function(req, res){

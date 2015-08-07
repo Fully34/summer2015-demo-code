@@ -27,7 +27,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 require('./routes/index');
 
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 9001);
+
 app.server = app.listen(app.get('port'), function() {
   debug('Express server listening on port ' + app.server.address().port);
 });
